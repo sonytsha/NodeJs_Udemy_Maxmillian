@@ -1,0 +1,2 @@
+using const means we have no plans of changing variable value
+if we have plans to change, then we use let
