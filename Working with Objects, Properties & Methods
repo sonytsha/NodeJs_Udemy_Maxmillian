@@ -1,0 +1,20 @@
+// this is a function
+const person = {
+    name : 'Sony',
+    age : 22,
+    greet : function(){
+        console.log("Hi, I am " + this.name);
+    }
+};
+person.greet();
+
+
+// this is a method 
+const person1 = {
+    name : 'Sony',
+    age : 22,
+    greet() {
+        console.log("Hi, I am " + this.name);
+    }
+};
+person1.greet();
