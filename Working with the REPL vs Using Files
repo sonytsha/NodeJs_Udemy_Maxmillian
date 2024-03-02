@@ -1,0 +1,5 @@
+R : read : read user input
+E : eval : evaluate user input
+P: print : print output( result)
+L : loop : wait for new input
+
