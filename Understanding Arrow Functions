@@ -1,0 +1,28 @@
+var name = "Max";
+var age = 29;
+var hasHobbies = true;
+const summarizeUser =  (userName, userAge, userHasHobby) => {
+    return (
+    'Name is ' +
+    userName +
+    ',age is' +
+    userAge +
+    'and the user has hobbies :' +
+    userHasHobby
+    );
+}
+console.log(summarizeUser(name, age, hasHobbies));
+
+const add = (a,b) => {
+    return a+b;
+}
+console.log(add(1,2));
+
+const add1 = (c,d) => c+d;
+console.log(add1(3,4));
+
+const addone = a => a+1;
+console.log(addone(1));
+
+const addrandom = () => 1+2;
+console.log(addrandom());
