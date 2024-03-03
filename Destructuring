@@ -1,0 +1,27 @@
+const person = {
+name : "sony",
+age : 22;
+greet() {
+console.log("hi , i am " + this.name);
+}
+};
+
+const printName = (personData) => {
+console.log(personData.name);
+}
+printName(person);
+
+
+const printName = ({name}) => {
+console.log(name);
+}
+printName(person);
+
+// this is object destructuring
+const { name. age} = person;
+console.log(name,age);
+
+const hobbies = ["spports", "cookies"];
+const[hobby1, hobby2] = hobbies;
+console.log(hobby1, hobby2);
+
