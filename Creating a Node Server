@@ -1,0 +1,22 @@
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    // this is create server callback
+    console.log(req);
+});
+server.listen(5999); //listen starts a prpcess, where node js will not execute directly, it will listen first
+// listen takes some arguments , like port where u want to store and hostname, hostname is the machine 
+
+/* function rqListener(req, res) {
+
+}
+http.createSever(rqListener); */ 
+
+// this is another way of doing it, with anonymous funcvtion
+// function without a name
+// this is an event driven architecture
+
+
+//request listered is a function that will execute for every incoming request
+// rqlistener takes 2 arguments, 1) request : type incoming message , some object that represents the incoming request and allows us to read from the object 
+// 2) object response - to send response from where we received
