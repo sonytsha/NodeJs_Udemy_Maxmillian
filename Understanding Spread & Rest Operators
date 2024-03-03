@@ -1,0 +1,31 @@
+const hobbies = ['sports', 'cookies'];
+const copiedArray = hobbies.slice();
+hobbies.push('programing');
+console.log(copiedArray); // slice simplies copies thhe array
+
+
+ const copiedarray1  = [hobbies]; // nested array
+
+ const copiedarray2 = [...hobbies]; // spread operator - used to copy existing array
+console.log(copiedarray1 );
+console.log(copiedarray2);
+
+REST OPERATOR :
+const toArray=( arg1, arg2, arg3) => {
+    return [arg1, arg2, arg3];
+    };
+    console.log(toArray(1,2,3));
+    
+    // this will return only 1,2,3
+    // now if we add 4 here, JS will not throw error, but it will not add
+  const toArray2 =(arg1, arg2, arg3) => {
+    return [arg1, arg2, arg3];
+    };
+    console.log(toArray(1,2,3,4));
+    
+    const toArray1= (...agrs) => {
+    return args;
+    };
+    console.log(toArray(1,2,3,4));
+    
+
